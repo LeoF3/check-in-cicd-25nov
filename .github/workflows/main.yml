@@ -171,7 +171,7 @@ jobs:
           export CA_MAVEN_USERNAME='~~~Client~~~'
           export CA_MAVEN_PASSWORD="$CA_CLIENT_ID~?~$CA_CLIENT_SECRET"
           mvn -V -B -ntp \
-            -DapplicationName="check-in-app-cicd-25nov" \
+            -DapplicationName="check-in-papi-app" \
             -Danypoint.platform.client_id="$ANYPOINT_PLATFORM_CLIENT_ID" \
             -Danypoint.platform.client_secret="$ANYPOINT_PLATFORM_CLIENT_SECRET" \
             -Dencrypt.key="$CLOUDHUB_ENCRYPT_KEY" \
