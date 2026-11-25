@@ -63,6 +63,8 @@ jobs:
           CA_CLIENT_ID: ${{ secrets.CA_CLIENT_ID }}
           CA_CLIENT_SECRET: ${{ secrets.CA_CLIENT_SECRET }}
         run: |
+          echo "RELEASES_EE_USERNAME: $RELEASES_EE_USERNAME"
+          echo "RELEASES_EE_PASSWORD: $RELEASES_EE_PASSWORD"
           : "${RELEASES_EE_USERNAME:?Set RELEASES_EE_USERNAME}"
           : "${RELEASES_EE_PASSWORD:?Set RELEASES_EE_PASSWORD}"
           if [[ -z "$CA_CLIENT_ID" || -z "$CA_CLIENT_SECRET" ]]; then
